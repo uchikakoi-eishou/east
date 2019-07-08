@@ -1,0 +1,35 @@
+// reset
+@import "reset";
+
+// mixim
+@mixin def-mar {
+    margin-top:20px;
+    margin-left:20px;
+}
+@mixin def-fon {
+    font-size:24px;
+}
+
+// header
+@import "header";
+
+// mein
+.insta {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    // posi ion: fixed;
+    img {
+        @include def-mar();
+        // float: left;
+        // margin-left: 20px;
+        width: 15%;
+        height: 10%;
+        border-radius: 100%;
+        object-fit: cover;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    
+}
