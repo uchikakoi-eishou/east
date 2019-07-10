@@ -2,14 +2,18 @@
     width: 100%;
     height: 100%;
     .menu {
+        width: 100%;
+        margin-top: 20px;
+        display: table;
+        table-layout: fixed;
         text-align: center;
+        li {
+            @include def-fon;
+            display: table-cell;
+            vertical-align: middle;
+        }
     }
-    li {
-        @include def-mar;
-        @include def-fon;
-        float: left;
-    }
-    img {
+    .top {
         margin-top: 20px;
         width: 100%;
         height: 400px;
