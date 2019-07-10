@@ -57,13 +57,6 @@ table {
   height: 100%;
 }
 
-.header .logo {
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 24px;
-  float: left;
-}
-
 .header .menu {
   text-align: center;
 }
@@ -92,6 +85,7 @@ table {
 .insta-box .insta-img {
   margin-top: 20px;
   margin-left: 20px;
+  margin-bottom: 20px;
   width: 125px;
   height: 125px;
   border-radius: 50%;

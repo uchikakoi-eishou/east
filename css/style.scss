@@ -20,6 +20,7 @@
     text-align: center;
     .insta-img {
         @include def-mar();
+        margin-bottom: 20px;
         width: 125px;
         height: 125px;
         border-radius: 50%;
