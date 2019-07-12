@@ -1,6 +1,10 @@
 // reset
 @import "reset";
 
+$pc-w: 1024px;
+$tab-w: 896px;
+$sp-w: 480px;
+
 // mixim
 @mixin def-mar {
     margin-top:20px;
@@ -12,6 +16,9 @@
 
 // header
 @import "header";
+@media screen and (min-width: 1024px) {
+
+
 
 // mein
 .insta-box {
@@ -42,6 +49,7 @@
         &:hover {
             transform: scale(1.1);  //  拡大率
             transition-duration: 0.3s;  // 拡大に掛かる時間
+            // border-radius: 100%;
             // opacity: 0.5;
         }
     }

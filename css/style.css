@@ -74,9 +74,16 @@ table {
 .header .top {
   margin-top: 20px;
   width: 100%;
-  height: 400px;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 479px) {
+  .menu li {
+    color: black;
+    text-align: center;
+  }
 }
 
 .insta-box {
