@@ -52,20 +52,38 @@ table {
   border-spacing: 0;
 }
 
+a, h1, h2, h3, h4, h5, h6 {
+  color: #777;
+}
+
 a {
   text-decoration: none;
-  color: #aaa;
 }
 
 img {
   vertical-align: bottom;
 }
 
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+}
+
+.section-title, .nav-item {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.section-title {
+  margin-top: 24px;
+  text-align: center;
+}
+
 .inner {
   margin: 0 auto;
   margin-left: 24px;
   margin-right: 24px;
-  background: #ccc;
 }
 
 .header {
@@ -82,11 +100,6 @@ img {
           justify-content: space-between;
 }
 
-.header .header-logo {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-}
-
 .header .header-center-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,49 +112,44 @@ img {
 }
 
 .header .header-img {
-  margin-top: 20px;
+  margin-top: 24px;
   width: 100%;
-  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media screen and (max-width: 479px) {
-  .menu li {
-    color: black;
-    text-align: center;
-  }
+.insta-box {
+  width: 100%;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media screen and (min-width: 1024px) {
-  .insta-box {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: table;
-    table-layout: fixed;
-    text-align: center;
-  }
-  .insta-box .insta-img {
-    width: 125px;
-    height: 125px;
-    display: table-cell;
-    vertical-align: middle;
-    overflow: hidden;
-  }
-  .insta-box img {
-    width: 125px;
-    height: 125px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
-  .insta-box img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
+.insta-box .insta-img {
+  width: 125px;
+  height: 125px;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.insta-box img {
+  width: 125px;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.insta-box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

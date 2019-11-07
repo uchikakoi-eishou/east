@@ -2,60 +2,72 @@
 @import "reset";
 
 // common
-$def-c: #aaa;
-$def-px: 24px;
-
-a {
-    text-decoration: none;
-    color: $def-c;
-}
-
-img {
-    vertical-align: bottom;
-
-}
-
+$default-color: #777;
+$default-px: 24px;
 $pc-w: 1024px;
 $tab-w: 896px;
 $sp-w: 480px;
 
-// mixim
-@mixin def-mar {
-    margin-top:20px;
-    margin-left:20px;
+a, h1, h2, h3, h4, h5, h6 {
+    color: $default-color;
 }
-@mixin def-fon {
-    font-size:24px;
+a {
+    text-decoration: none;
 }
 
+img {
+    vertical-align: bottom;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: $default-px;
+}
+
+.section-title, .nav-item {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: $default-px;
+}
+
+.section-title {
+    margin-top: $default-px;
+    text-align: center;
+}
 
 .inner {
     // width: 100%;
     // max-width: 100%;
     margin: 0 auto;
-    margin-left: $def-px;
-    margin-right: $def-px;
+    margin-left: $default-px;
+    margin-right: $default-px;
     // margin-right: 20px;
     // padding: 24px;
-    background: #ccc;
+    // background: #ccc;
     // line-height: 0;
 }
 
 // header
 @import "header";
-@media screen and (min-width: 1024px) {
+// @media screen and (min-width: 1024px) {
+
+// about
 
 
 
-// mein
+
+// gallery
+
 .insta-box {
     width: 100%;
     // height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: table;
-    table-layout: fixed;
-    text-align: center;
+    margin-top: $default-px;
+    // margin-bottom: 20px;
+    // display: table;
+    display: flex;
+    justify-content: space-between;
+    // table-layout: fixed;
+    // text-align: center;
     .insta-img {
         // @include def-mar();
         width: 125px;
@@ -82,4 +94,4 @@ $sp-w: 480px;
     }
     
 }
-}
+// }

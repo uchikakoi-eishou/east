@@ -3,39 +3,35 @@
     // height: 100%;
     // font-size: $def-px;
     .header-nav {
-        margin-top: $def-px;
+        margin-top: $default-px;
         display: flex;
         justify-content: space-between;
-    }
-    .header-logo {
-        font-family: 'Cinzel', serif;
-        font-size: $def-px;
     }
     .header-center-nav ul {
         display: flex;
         // justify-content: space-around;
         li {
-            font-size: $def-px - 4;
-            margin-left: $def-px;
+            font-size: $default-px - 4;
+            margin-left: $default-px;
 
         }
 
     }
     .header-img {
-        margin-top: 20px;
+        margin-top: $default-px;
         width: 100%;
-        height: 350px;
+        // height: 500px;
         object-fit: cover;
         // line-height: 0;
     }
 }
 
 @media screen and (max-width: 479px) {
-    .menu li {
-        // display: none;
-        color: black;
-        text-align: center;
-    }
+    // .menu li {
+    //     // display: none;
+    //     color: black;
+    //     text-align: center;
+    // }
     
 }
     
