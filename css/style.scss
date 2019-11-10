@@ -8,6 +8,32 @@ $pc-w: 1024px;
 $tab-w: 896px;
 $sp-w: 480px;
 
+// body {
+//     opacity: 0;
+//     transform: translate(0, 50px);
+//     transition: all 1500ms;
+// }
+// body.scrollin {
+//     opacity: 1;
+//     transform: translate(0, 0);
+// }
+
+body {
+    animation: fadeIn 2s ease 0s 1 nomal;
+    -webkit-animation: fadeIn 2s ease 0s 1 nomal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+    
+}
+
 a, h1, h2, h3, h4, h5, h6 {
     color: $default-color;
 }
@@ -39,8 +65,8 @@ img {
     // width: 100%;
     // max-width: 100%;
     margin: 0 auto;
-    margin-left: $default-px;
-    margin-right: $default-px;
+    margin-left: $default-px * 2;
+    margin-right: $default-px * 2;
     // margin-right: 20px;
     // padding: 24px;
     // background: #ccc;
@@ -52,6 +78,38 @@ img {
 // @media screen and (min-width: 1024px) {
 
 // about
+.about {
+    margin-top: $default-px;
+    display: flex;
+    .about-left {
+        flex: 1;
+        text-align: center;
+        .about-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .about-name {
+            margin-top: $default-px;
+            font-size: $default-px;
+        }
+        .about-english {
+            margin-top: $default-px / 2;
+        }
+    }
+    .about-right {
+        flex: 1;
+        text-align: center;
+        .about-right-section {
+            margin-top: $default-px;
+        }
+        p {
+            margin-top: $default-px / 2;
+        }
+    }
+}
+
 
 
 
